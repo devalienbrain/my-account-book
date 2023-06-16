@@ -5,20 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Private Account Book</title>
+    <style>
+        .box-style {
+            display: flex;
+        }
+
+        .inside-box-style {
+            margin: 2%;
+            padding: 2%;
+            flex: 30%;
+
+            border: none;
+            border-radius: 10px;
+            background-color: aqua;
+            text-align: center;
+            height: 300px;
+        }
+
+        .input-style {
+            width: 80%;
+            padding: 5%;
+            margin: 3%;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <main>
-        <section>
-            <h1>Account Book</h1>
-            <div>
-                <input id="email-field" type="email" , placeholder="Email address">
-                <input id="password-field" type="password" , placeholder="password">
-                <button id="login-button">Log in</button>
+    <section style="margin: 10%;">
+        <div class="box-style">
+            <div style="background-color: white;" class="inside-box-style">
+                <h1>Account Book!</h1>
+                <h3>Please login first.</h3>
+                <small>fatihasultana777@gmail.com </small>
+            </div>
+            <div class="inside-box-style">
+                <input class="input-style" id="email-field" type="email" , placeholder="Email address">
+                <input class="input-style" id="password-field" type="password" , placeholder="Password">
+                <button style="background-color: red;" class="input-style" id="login-button">Log in</button>
             </div>
 
-        </section>
-    </main>
+        </div>
+    </section>
 </body>
 <script src="login-script.js">  </script>
 

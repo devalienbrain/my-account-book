@@ -5,42 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatiha's Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="account-style.css">
 </head>
 
 <body>
-    <main>
-        <section>
-            <h1>Fatiha's Account</h1>
-
-            <div>
-                <h3>Remaining total amount = <span id="total-amount">0</span> Taka</h3>
-            </div>
-
-        </section>
-        <section>
-            <div>
-                Deposit Ammount
-                <input id="deposit-field" type="number" placeholder="Amount to deposit">
-                <button id="credit-click">Credit</button>
-            </div>
-
-            <div>
-                <h4>Total amount deposited= <span id="total-deposit-amount">0</span> Taka</h4>
-            </div>
-
-            <div>
-                Withdrwal Ammount
-                <input id="withdrwal-field" type="number" placeholder="Amount to withdraw">
-                <button id="debit-click">Debit</button>
-            </div>
-
-            <div>
+    <section style="margin-left: 10%; margin-right: 10%; margin-bottom: 5%;">
+        <div style="top: 0; height: 70px; background-color: blue;">
+            <h1 style="color: white; text-align: center; padding-top: 2%;">SABBIR AND FATIHA's PRIVATE ACCOUNT</h1>
+        </div>
+    </section>
+    <section style="margin-left: 10%; margin-right: 10%; margin-bottom: 5%;">
+        <div style="display: flex;">
+            <div
+                style="flex: 30%; padding: 2%; background-color: orangered; margin: 2%; border: none; border-radius: 10px;">
                 <h4>Total amount withdrawed = <span id="total-withdraw-amount">0</span> Taka</h4>
             </div>
 
-        </section>
-    </main>
+            <div
+                style="flex: 30%; padding: 2%; background-color: orchid; margin: 2%; border: none; border-radius: 10px;">
+                <h3>Remaining total amount = <span id="total-amount">0</span> Taka</h3>
+            </div>
+
+            <div
+                style="flex: 30%; padding: 2%; background-color: greenyellow; margin: 2%; border: none; border-radius: 10px;">
+                <h4>Total amount deposited= <span id="total-deposit-amount">0</span> Taka</h4>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-left: 10%; margin-right: 10%; margin-bottom: 5%;">
+        <div style="display: flex;">
+            <div
+                style="flex: 45%; padding: 2%; background-color: yellowgreen; margin: 2%; border: none; border-radius: 10px;">
+                Deposit Ammount
+                <span><input id="deposit-field" type="number" placeholder="Amount to deposit"></span>
+                <span><button id="credit-click">Credit</button></span>
+            </div>
+
+            <div style="flex: 45%; padding: 2%; background-color: red; margin: 2%; border: none; border-radius: 10px;">
+                Withdrwal Ammount
+                <span><input id="withdrwal-field" type="number" placeholder="Amount to withdraw"></span>
+                <span><button id="debit-click">Debit</button></span>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-left: 10%; margin-right: 10%;">
+        <div style="display: flex; justify-content: center;">
+            <button
+                style="width: 97%; border-radius: 10px; padding: 2%; background-color: black; font-weight: bolder; font-size: larger; color: white;"
+                id="clickToLogout">Click to
+                Logout</button>
+        </div>
+    </section>
 </body>
+
 <script src="account-script.js"></script>
+<script>
+    document.getElementById('clickToLogout').addEventListener('click', function () {
+        window.location.href = "index.html";
+    })
+</script>
 
 </html>

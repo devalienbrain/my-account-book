@@ -26,4 +26,3 @@ document.getElementById('debit-click').addEventListener('click', function () {
     totalAmountWithdrawed += parseFloat(document.getElementById('withdrwal-field').value);
     document.getElementById('total-withdraw-amount').innerText = totalAmountWithdrawed;
 })
-

@@ -1,0 +1,10 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+span {
+    display: block;
+    padding: 1%;
+}
